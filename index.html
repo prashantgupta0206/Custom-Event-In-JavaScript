@@ -17,6 +17,7 @@
 		headerTag.style.color = e.detail.textColor;
 	});
 	
+	//function to create custom Event
 	function chageNumber(n, c) {
 		var event = new CustomEvent('numberChanged', {
 			detail: {
@@ -24,6 +25,7 @@
 				textColor: c
 			}
 		});
+		//dispatchEvent
 		headerTag.dispatchEvent(event);
 	}
 </script>
